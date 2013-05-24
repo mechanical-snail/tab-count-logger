@@ -10,4 +10,4 @@ While the extension is installed and enabled, it will display "Tab Count Logger"
 There is no UI for viewing the collected data. Use an external tool to plot your tab counts over time.
 
 # See also
-* @@@@ Other tab count extensions
+* [Tab Counter](https://addons.mozilla.org/en-US/firefox/addon/tabcounter/): a preexisting tab-counter extension that keeps some statistics
