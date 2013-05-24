@@ -1,0 +1,1 @@
+Source: https://github.com/julianceballos/sqlite-jetpack, with patch from https://github.com/thinkcontext/sqlite-jetpack

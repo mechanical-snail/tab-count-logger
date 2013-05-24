@@ -1,0 +1,9 @@
+{
+  "name": "tab-count-logger",
+  "fullName": "Tab Count Logger",
+  "id": "jid1-P7wBcpWdACftUQ",
+  "description": "Periodically logs a count of open tabs/windows to an SQLite database.",
+  "author": "Mechanical snail",
+  "license": "GPLv2+",
+  "version": "0.1.0"
+}
