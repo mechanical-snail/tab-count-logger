@@ -10,7 +10,7 @@ To build, extract and activate the [Mozilla Add-on SDK](https://github.com/mozil
 # Usage
 While the extension is installed and enabled, it will display "Tab Count Logger" in the status bar and log to an SQLite database  (table `tabCountLog` of `tabCountLog.sqlite` in your profile directory; both will be created if not already present). Clicking the text causes it to immediately record a count. To pause data collection, disable the extension.
 
-There is no UI for viewing the collected data. Use an external tool to plot your tab counts over time.
+The extension provides no UI for viewing the collected data. Use an external tool to plot your tab counts over time. A script to do so is included with the source code as `plot.py`.
 
 # See also
 * [Tab Counter](https://addons.mozilla.org/en-US/firefox/addon/tabcounter/): a preexisting tab-counter extension that keeps some statistics
