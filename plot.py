@@ -20,7 +20,7 @@ if len(sys.argv) != 2:
 profiledir = sys.argv[1]
 
 
-def plot(log, xlabel):
+def plot(log, xlabel, linestyle='-'):
 	fig = plt.figure()
 	tabaxes = fig.add_subplot(1, 1, 1)
 	tabaxes.set_xlabel(xlabel)
@@ -29,11 +29,11 @@ def plot(log, xlabel):
 	winaxes.set_ylabel('Windows')
 	
 	tabplot, = tabaxes.plot(log.index, log['tabs'], label='Tabs', color='blue',
-		marker=',', linestyle='None'
+		marker=',', linestyle=linestyle
 	)
 	tabaxes.get_yaxis().label.set_color(tabplot.get_color())
 	winplot, = winaxes.plot(log.index, log['windows'], label='Windows', color='red',
-		marker=',', linestyle='None'
+		marker=',', linestyle=linestyle
 	)
 	winaxes.get_yaxis().label.set_color(winplot.get_color())
 	
@@ -54,6 +54,6 @@ with sqlite3.connect(profiledir + "/tabCountLog.sqlite", detect_types=sqlite3.PA
 	print('...')
 	print(log.tail())
 	
-	plot(log, 'Time')
-	plot(log_notime, 'Observation number')
+	plot(log, 'Time', linestyle='None')
+	plot(log_notime, 'Observation number', linestyle='-')
 	plt.show()
